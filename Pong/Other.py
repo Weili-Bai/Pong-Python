@@ -1,7 +1,7 @@
 from turtle import Turtle
 
 FONT = ('Courier', 30, 'normal')
-
+WINNING_SCORE = 11
 
 def get_size(window):
     result = window.numinput(title="Size", prompt="What size of value do you want?(3 ~ 8)", minval=3, maxval=8)
@@ -25,7 +25,7 @@ def get_line(window):
 
 
 def is_game_on(num1, num2):
-    return num1 < 11 and num2 < 11
+    return num1 < WINNING_SCORE and num2 < WINNING_SCORE
 
 
 def get_result(num):
