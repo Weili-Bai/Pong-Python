@@ -4,7 +4,7 @@ FONT = ('Courier', 30, 'normal')
 
 
 def get_size(window):
-    result = window.numinput(title="Size", prompt="What size of value do you want?", minval=3, maxval=8)
+    result = window.numinput(title="Size", prompt="What size of value do you want?(3 ~ 8)", minval=3, maxval=8)
     return int(result)
 
 
